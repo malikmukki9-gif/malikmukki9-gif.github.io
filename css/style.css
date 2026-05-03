@@ -1,0 +1,153 @@
+/* Grundlegendes & Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Lässt die Seite weich scrollen */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Sehr cleaner, technischer Look */
+    color: #1d1d1f; /* Fast schwarz, wie bei Apple */
+    background-color: #fbfbfd;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header ultra-minimalistisch */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* Der typische Apple-Milchglas-Effekt */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #0066cc; /* Dezentes Blau */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #86868b;
+    margin-bottom: 40px;
+}
+
+.btn-main {
+    background: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px; /* Runde Buttons */
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background: #0077ed;
+    transform: scale(1.02);
+}
+
+/* Leistungen */
+.services {
+    padding: 150px 0; /* Richtig viel Platz, typisch Apple */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    letter-spacing: -1px;
+}
+
+.service-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.service-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    color: #86868b;
+}
+
+.icon {
+    font-size: 3rem;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(204, 73, 73);
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.6); /* Macht das Video dunkler, damit man den Text besser liest */
+}
