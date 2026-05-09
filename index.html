@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asa Bau - Apple Style</title>
+    <title>ASA BAU | Präzision in jedem Detail</title>
     
-    <!-- Moderne Apple-ähnliche Schriftart (Inter) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     
-    <!-- Die AOS Animations-Bibliothek (CSS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Dein eigenes Design -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header data-aos="fade-down" data-aos-duration="1000">
-        <nav class="container">
-            <div class="logo">ASA <span>BAU</span></div>
-            <a href="#kontakt" class="btn-small">Kontakt</a>
-        </nav>
-    </header>
+<header>
+    <nav class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-clean.png" alt="ASA BAU Logo">
+            </a>
+        </div>
+        
+        <div class="nav-contact">
+    <a href="tel:+4917681292673" class="phone-link">
+        <i class="fas fa-phone-alt" style="margin-right: 8px; font-size: 0.9rem;"></i>
+        <span class="phone-text">Kontakt</span>
+    </a>
+</div>
+    </nav>
+</header>
 
 <section class="hero">
-    <!-- Das Video-Element -->
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="img/96942fd3-3f22-4eab-8132-08152347856e-1_all_31155.mp4" type="video/mp4">
-    </video>
-    
     <div class="hero-content container">
         <h1 data-aos="fade-up">Präzision in <br><span>jedem Detail.</span></h1>
         <p data-aos="fade-up" data-aos-delay="200">Trockenbau • Malerarbeiten • Fußböden</p>
@@ -38,50 +41,74 @@
     </div>
 </section>
 
-    <section id="leistungen" class="services container">
-        <h2 class="section-title" data-aos="fade-up">Alles aus einer Hand.</h2>
-        <div class="service-grid">
-            <!-- Jede Karte kommt sanft von unten -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon">🎨</div>
-                <h3>Malerarbeiten</h3>
-                <p>Streichen, Tapezieren, Spachteln.</p>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon">🔨</div>
-                <h3>Trockenbau</h3>
-                <p>Wände, Decken und Dämmung.</p>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon">🏠</div>
-                <h3>Fußboden</h3>
-                <p>Laminat, Vinyl und PVC.</p>
-            </div>
+<section id="leistungen" class="services container">
+    <h2 class="section-title" data-aos="fade-up">Alles aus einer Hand.</h2>
+    
+    <div class="service-grid">
+        
+        <div class="service-card" data-aos="fade-up" onclick="openModal('maler')">
+            <div class="icon"><i class="fas fa-paint-roller"></i></div> 
+            <h3>Malerarbeiten</h3>
+            <p>Klicken für Details...</p>
         </div>
-    </section>
-<!-- Footer Section -->
-    <footer id="kontakt" style="background: #1d1d1f; color: #fbfbfd; padding: 60px 0; margin-top: 100px; text-align: center;">
-        <div class="container" data-aos="fade-up">
-            <h2 style="margin-bottom: 20px;">Lassen Sie uns Ihr Projekt starten.</h2>
-            <p style="color: #86868b; margin-bottom: 30px;">Rufen Sie uns an oder schreiben Sie uns auf Instagram.</p>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100" onclick="openModal('trockenbau')">
+            <div class="icon"><i class="fas fa-tools"></i></div> 
+            <h3>Trockenbau</h3>
+            <p>Klicken für Details...</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200" onclick="openModal('fussboden')">
+            <div class="icon"><i class="fas fa-border-all"></i></div> 
+            <h3>Fußboden</h3>
+            <p>Klicken für Details...</p>
+        </div>
+
+    </div> </section>
+
+<footer id="kontakt" style="background: #1d1d1f; color: #fbfbfd; padding: 80px 0; margin-top: 100px; text-align: center;">
+    <div class="container" data-aos="fade-up">
+        <h2 style="margin-bottom: 20px; font-size: 2.5rem; letter-spacing: -1px;">Lassen Sie uns Ihr Projekt starten.</h2>
+        <p style="color: #86868b; margin-bottom: 40px; font-size: 1.1rem;">Wir freuen uns auf Ihre Anfrage.</p>
+        
+        <div style="font-size: 1.2rem; margin-bottom: 50px; display: flex; flex-direction: column; gap: 20px; align-items: center;">
+            <p><i class="fas fa-phone" style="color: #0066cc; margin-right: 10px;"></i> 
+               <a href="tel:+4917681292673" style="color: #fbfbfd; text-decoration: none;">+49 176 81292673</a></p>
             
-            <div style="font-size: 1.2rem; margin-bottom: 40px;">
-                <p>📞 <a href="tel:+4917681292673" style="color: #0066cc; text-decoration: none;">+49 176 81292673</a></p>
-                <p>📸 <a href="https://instagram.com/asabau_hannover" target="_blank" style="color: #0066cc; text-decoration: none;">@asabau_hannover</a></p>
-            </div>
-
-            <!-- Rechtliche Links -->
-            <div style="border-top: 1px solid #333; padding-top: 20px; font-size: 0.9rem; color: #86868b; display: flex; justify-content: center; gap: 20px;">
-                <span>&copy; 2026 ASA BAU</span>
-                <a href="impressum.html" style="color: #86868b; text-decoration: none;">Impressum</a>
-                <a href="datenschutz.html" style="color: #86868b; text-decoration: none;">Datenschutz</a>
-            </div>
+            <p><i class="fas fa-envelope" style="color: #0066cc; margin-right: 10px;"></i> 
+               <a href="mailto:info@asabau-hannover.de" style="color: #fbfbfd; text-decoration: none;">info@asabau-hannover.de</a></p>
+            
+            <p><i class="fab fa-instagram" style="color: #0066cc; margin-right: 10px;"></i> 
+               <a href="https://instagram.com/asabau_hannover" target="_blank" style="color: #fbfbfd; text-decoration: none;">@asabau_hannover</a></p>
         </div>
-    </footer>
-    <!-- Die AOS Animations-Bibliothek (JavaScript) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Dein eigenes JavaScript -->
-    <script src="js/script.js"></script>
 
+        <div style="border-top: 1px solid #333; padding-top: 30px; font-size: 0.9rem; color: #86868b; display: flex; justify-content: center; gap: 30px;">
+            <span>&copy; 2026 ASA BAU</span>
+            <a href="impressum.html" style="color: #86868b; text-decoration: none; transition: 0.3s;">Impressum</a>
+            <a href="datenschutz.html" style="color: #86868b; text-decoration: none; transition: 0.3s;">Datenschutz</a>
+        </div>
+    </div>
+</footer>
+
+<div id="serviceModal" class="modal">
+    <div class="modal-content" data-aos="zoom-in">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-image-container">
+            <img id="modalImage" src="" alt="Leistungsbeispiel" class="modal-main-image">
+        </div>
+        <h2 id="modalTitle">Leistung</h2>
+        <div id="modalBody"></div>
+        <a href="tel:+4917681292673" class="btn-main modal-cta">Jetzt Angebot anfragen</a>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+
+<div id="cookie-banner" class="cookie-notice">
+    <p>Wir nutzen Cookies, um Ihre Erfahrung zu verbessern. <a href="datenschutz.html">Mehr erfahren</a></p>
+    <button onclick="acceptCookies()">Verstanden</button>
+</div>
 </body>
 </html>
