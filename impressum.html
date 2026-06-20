@@ -4,41 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - ASA BAU</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .legal-content { padding: 150px 0; max-width: 800px; margin: auto; }
-        h1 { font-size: 3rem; margin-bottom: 40px; }
-        h2 { margin-top: 30px; font-size: 1.5rem; }
-        p { color: #555; margin-bottom: 15px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #0066cc; text-decoration: none; }
+        body { background: #fbfbfd; }
+        .legal-page { padding: 140px 0 100px; max-width: 820px; margin: 0 auto; }
+        .legal-badge {
+            display: inline-block;
+            background: #f0f6ff;
+            color: #0066cc;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .legal-page h1 { font-size: 3.2rem; letter-spacing: -2px; color: #1d1d1f; margin-bottom: 50px; line-height: 1.1; }
+        .legal-section { margin-bottom: 40px; }
+        .legal-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e8e8ed;
+        }
+        .legal-section p, .legal-section li { color: #555; line-height: 1.8; font-size: 1rem; }
+        .legal-section li { margin-left: 20px; margin-bottom: 6px; }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            transition: gap 0.2s;
+        }
+        .back-link:hover { gap: 12px; }
     </style>
 </head>
 <body>
-    <div class="container legal-content">
+    <div class="container legal-page">
         <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+        <div class="legal-badge">Rechtliches</div>
         <h1>Impressum</h1>
 
-        <h2>Angaben gemäß § 5 DDG</h2>
-        <p>ASA BAU<br>
-        [Vorname Nachname des Inhabers]<br>
-        [Straße und Hausnummer]<br>
-        [PLZ und Ort]</p>
+        <div class="legal-section">
+            <h2>Angaben gemäß § 5 DDG</h2>
+            <p>
+                <strong>ASA BAU GbR</strong><br>
+                Wunstorfer Straße 33<br>
+                30926 Seelze<br>
+                Deutschland
+            </p>
+        </div>
 
-        <h2>Kontakt</h2>
-        <p>Telefon: +49 176 81292673<br>
-        E-Mail: [E-Mail-Adresse des Kunden]</p>
+        <div class="legal-section">
+            <h2>Vertreten durch</h2>
+            <p>
+                Abdulrashid Aushev<br>
+                Abdul Azim Elabaev
+            </p>
+        </div>
 
-        <h2>Aufsichtsbehörde</h2>
-        <p>Handwerkskammer Hannover<br>
-        [Hier ggf. Betriebsnummer eintragen]</p>
+        <div class="legal-section">
+            <h2>Kontakt</h2>
+            <p>
+                Telefon / Mobil: <a href="tel:+4917681292673" style="color: #0066cc; text-decoration: none;">+49 176 81292673</a><br>
+                E-Mail: <a href="mailto:info@asabau-hannover.de" style="color: #0066cc; text-decoration: none;">info@asabau-hannover.de</a>
+            </p>
+        </div>
 
-        <h2>Umsatzsteuer-ID</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-        [DE123456789 - falls vorhanden, sonst Zeile löschen]</p>
+        <div class="legal-section">
+            <h2>Umsatzsteuer-ID</h2>
+            <p>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+                <strong>DE450508320</strong>
+            </p>
+        </div>
 
-        <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <div class="legal-section">
+            <h2>Berufshaftpflichtversicherung</h2>
+            <p>
+                <strong>Name und Sitz des Versicherers:</strong><br>
+                VHV Versicherungen<br>
+                VHV-Platz 1<br>
+                30177 Hannover<br><br>
+                <strong>Geltungsraum der Versicherung:</strong><br>
+                Deutschland
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>EU-Streitschlichtung</h2>
+            <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: none;">https://ec.europa.eu/consumers/odr/</a>.<br>
+                Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>Haftungsausschluss</h2>
+            <p>
+                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+            </p>
+        </div>
     </div>
 </body>
 </html>

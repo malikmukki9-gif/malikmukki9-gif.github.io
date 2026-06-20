@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfrage versendet | ASA BAU</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body.thanks-page {
+            background: #fbfbfd;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+        }
+        .thanks-card {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 90%;
+        }
+        .thanks-card i {
+            font-size: 4rem;
+            color: #0066cc;
+            margin-bottom: 25px;
+        }
+        .thanks-card h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        .thanks-card p {
+            color: #86868b;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .made-by {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: #86868b;
+        }
+        .made-by img {
+            height: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="thanks-page">
+
+    <div class="thanks-card">
+        <i class="fas fa-check-circle"></i>
+        <h1>Danke für Ihre Sendung!</h1>
+        <p>Wir haben Ihre Nachricht erhalten und arbeiten bereits dran. Wir melden uns in Kürze bei Ihnen.</p>
+        <a href="index.html" class="btn-main">Zurück zur Website</a>
+    </div>
+
+    <div class="made-by">
+        <span>Made by</span>
+        <img src="img/logo-clean.png" alt="ASA BAU Logo">
+    </div>
+
+</body>
+</html>
